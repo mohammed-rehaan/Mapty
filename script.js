@@ -86,7 +86,7 @@ class App {
   _getLocation() {
     const currentPosition = navigator.geolocation.getCurrentPosition(
       this._loadMap.bind(this),
-      () => alert('Cannot Locate :(')
+      () => alert('Check if your location is turned on')
     );
   }
   _loadMap(e) {
